@@ -1,0 +1,15 @@
+
+📊 Analysis Summary:
+Health Score: 97/100 (Grade: A)
+Total time: 928ms
+
+📈 Detailed Scores:
+  Coupling (CBO):  85/100 👍  (avg: 1.9, 3/103 high-coupling)
+
+
+--------------------------------------------------
+[Badge] Add this to your README to show off your score:
+[![pyscn quality](https://img.shields.io/badge/pyscn-A-brightgreen)](https://github.com/ludo-technologies/pyscn)
+
+[Star] Finding pyscn useful? https://github.com/ludo-technologies/pyscn
+--------------------------------------------------

@@ -1,0 +1,2963 @@
+{
+  "cbo": {
+    "classes": [
+      {
+        "name": "WidgetManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_widgetmanager.py",
+        "start_line": 55,
+        "end_line": 571,
+        "metrics": {
+          "coupling_count": 29,
+          "inheritance_dependencies": 23,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 5,
+          "import_dependencies": 29,
+          "dependent_classes": [
+            "Base",
+            "ButtonManager",
+            "ColorInputManager",
+            "CounterManager",
+            "DropSelectManager",
+            "DropSelectMultipleManager",
+            "FPSManager",
+            "FrameManager",
+            "HMarginManager",
+            "ImageManager",
+            "LabelManager",
+            "MenuLinkManager",
+            "NoneWidgetManager",
+            "ProgressBarManager",
+            "RangeSliderManager",
+            "SelectorManager",
+            "SurfaceWidgetManager",
+            "TableManager",
+            "TextInputManager",
+            "TimerManager",
+            "ToggleSwitchManager",
+            "VFillManager",
+            "VMarginManager",
+            "pygame_menu.BaseImage",
+            "pygame_menu.Menu",
+            "pygame_menu.menu._MenuSizingException",
+            "pygame_menu.menu._MenuWidgetOverflow",
+            "pygame_menu.widgets.Button",
+            "pygame_menu.widgets.NoneSelection"
+          ]
+        },
+        "risk_level": "high",
+        "is_abstract": false,
+        "base_classes": [
+          "Base",
+          "ButtonManager",
+          "ColorInputManager",
+          "CounterManager",
+          "DropSelectManager",
+          "DropSelectMultipleManager",
+          "FPSManager",
+          "FrameManager",
+          "HMarginManager",
+          "ImageManager",
+          "LabelManager",
+          "MenuLinkManager",
+          "NoneWidgetManager",
+          "ProgressBarManager",
+          "RangeSliderManager",
+          "SelectorManager",
+          "SurfaceWidgetManager",
+          "TableManager",
+          "TextInputManager",
+          "TimerManager",
+          "ToggleSwitchManager",
+          "VFillManager",
+          "VMarginManager"
+        ]
+      },
+      {
+        "name": "Menu",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/menu.py",
+        "start_line": 97,
+        "end_line": 4378,
+        "metrics": {
+          "coupling_count": 12,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 26,
+          "instantiation_dependencies": 10,
+          "attribute_access_dependencies": 1,
+          "import_dependencies": 12,
+          "dependent_classes": [
+            "Base",
+            "Controller",
+            "Decorator",
+            "MenuBar",
+            "ScrollArea",
+            "Sound",
+            "THEME_DEFAULT",
+            "WidgetManager",
+            "pygame.Rect",
+            "pygame.Surface",
+            "pygame.joystick.Joystick",
+            "pygame.time.Clock"
+          ]
+        },
+        "risk_level": "high",
+        "is_abstract": false,
+        "base_classes": [
+          "Base"
+        ]
+      },
+      {
+        "name": "Widget",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/core/widget.py",
+        "start_line": 265,
+        "end_line": 3410,
+        "metrics": {
+          "coupling_count": 10,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 33,
+          "instantiation_dependencies": 5,
+          "attribute_access_dependencies": 4,
+          "import_dependencies": 10,
+          "dependent_classes": [
+            "Base",
+            "Controller",
+            "Decorator",
+            "Sound",
+            "pygame.Rect",
+            "pygame_menu.BaseImage",
+            "pygame_menu._scrollarea.ScrollArea",
+            "pygame_menu.widgets.DropSelect",
+            "pygame_menu.widgets.Frame",
+            "pygame_menu.widgets.NoneSelection"
+          ]
+        },
+        "risk_level": "high",
+        "is_abstract": false,
+        "base_classes": [
+          "Base"
+        ]
+      },
+      {
+        "name": "TextInput",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/textinput.py",
+        "start_line": 108,
+        "end_line": 2118,
+        "metrics": {
+          "coupling_count": 10,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 10,
+          "instantiation_dependencies": 3,
+          "attribute_access_dependencies": 6,
+          "import_dependencies": 10,
+          "dependent_classes": [
+            "Widget",
+            "WidgetTransformationNotImplemented",
+            "pygame.K_a",
+            "pygame.K_c",
+            "pygame.K_v",
+            "pygame.K_x",
+            "pygame.K_y",
+            "pygame.K_z",
+            "pygame.event.Event",
+            "pygame.time.Clock"
+          ]
+        },
+        "risk_level": "high",
+        "is_abstract": false,
+        "base_classes": [
+          "Widget"
+        ]
+      },
+      {
+        "name": "Frame",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/frame.py",
+        "start_line": 94,
+        "end_line": 1931,
+        "metrics": {
+          "coupling_count": 7,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 20,
+          "instantiation_dependencies": 5,
+          "attribute_access_dependencies": 1,
+          "import_dependencies": 7,
+          "dependent_classes": [
+            "Button",
+            "Label",
+            "Widget",
+            "WidgetTransformationNotImplemented",
+            "pygame.Rect",
+            "pygame_menu.BaseImage",
+            "pygame_menu._scrollarea.ScrollArea"
+          ]
+        },
+        "risk_level": "medium",
+        "is_abstract": false,
+        "base_classes": [
+          "Widget"
+        ]
+      },
+      {
+        "name": "ScrollArea",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_scrollarea.py",
+        "start_line": 105,
+        "end_line": 1413,
+        "metrics": {
+          "coupling_count": 6,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 16,
+          "instantiation_dependencies": 3,
+          "attribute_access_dependencies": 3,
+          "import_dependencies": 6,
+          "dependent_classes": [
+            "Base",
+            "Decorator",
+            "ScrollBar",
+            "pygame.Rect",
+            "pygame.Surface",
+            "pygame_menu.BaseImage"
+          ]
+        },
+        "risk_level": "medium",
+        "is_abstract": false,
+        "base_classes": [
+          "Base"
+        ]
+      },
+      {
+        "name": "BaseImage",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/baseimage.py",
+        "start_line": 146,
+        "end_line": 1034,
+        "metrics": {
+          "coupling_count": 6,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 13,
+          "instantiation_dependencies": 4,
+          "attribute_access_dependencies": 2,
+          "import_dependencies": 6,
+          "dependent_classes": [
+            "Base",
+            "BytesIO",
+            "Path",
+            "pygame.Color",
+            "pygame.Rect",
+            "pygame.Surface"
+          ]
+        },
+        "risk_level": "medium",
+        "is_abstract": false,
+        "base_classes": [
+          "Base"
+        ]
+      },
+      {
+        "name": "ButtonManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/button.py",
+        "start_line": 42,
+        "end_line": 500,
+        "metrics": {
+          "coupling_count": 6,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 6,
+          "instantiation_dependencies": 3,
+          "attribute_access_dependencies": 2,
+          "import_dependencies": 6,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "Button",
+            "pygame.Surface",
+            "pygame_menu.BaseImage",
+            "pygame_menu.Menu",
+            "pygame_menu.widgets.NoneSelection"
+          ]
+        },
+        "risk_level": "medium",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "Table",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/table.py",
+        "start_line": 67,
+        "end_line": 929,
+        "metrics": {
+          "coupling_count": 6,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 12,
+          "instantiation_dependencies": 5,
+          "attribute_access_dependencies": 1,
+          "import_dependencies": 6,
+          "dependent_classes": [
+            "Frame",
+            "Image",
+            "Label",
+            "SurfaceWidget",
+            "pygame.Rect",
+            "pygame.Surface"
+          ]
+        },
+        "risk_level": "medium",
+        "is_abstract": false,
+        "base_classes": [
+          "Frame"
+        ]
+      },
+      {
+        "name": "DropSelect",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/dropselect.py",
+        "start_line": 67,
+        "end_line": 1446,
+        "metrics": {
+          "coupling_count": 5,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 20,
+          "instantiation_dependencies": 4,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 5,
+          "dependent_classes": [
+            "Button",
+            "Frame",
+            "Widget",
+            "WidgetTransformationNotImplemented",
+            "pygame.Rect"
+          ]
+        },
+        "risk_level": "medium",
+        "is_abstract": false,
+        "base_classes": [
+          "Widget"
+        ]
+      },
+      {
+        "name": "RangeSlider",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/rangeslider.py",
+        "start_line": 67,
+        "end_line": 1405,
+        "metrics": {
+          "coupling_count": 5,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 16,
+          "instantiation_dependencies": 4,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 5,
+          "dependent_classes": [
+            "Widget",
+            "WidgetTransformationNotImplemented",
+            "pygame.Rect",
+            "pygame.event.Event",
+            "pygame.time.Clock"
+          ]
+        },
+        "risk_level": "medium",
+        "is_abstract": false,
+        "base_classes": [
+          "Widget"
+        ]
+      },
+      {
+        "name": "Decorator",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_decorator.py",
+        "start_line": 176,
+        "end_line": 1700,
+        "metrics": {
+          "coupling_count": 4,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 10,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 3,
+          "import_dependencies": 4,
+          "dependent_classes": [
+            "Base",
+            "pygame.Rect",
+            "pygame.Surface",
+            "pygame_menu.BaseImage"
+          ]
+        },
+        "risk_level": "medium",
+        "is_abstract": false,
+        "base_classes": [
+          "Base"
+        ]
+      },
+      {
+        "name": "ShadowGenerator",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_shadow.py",
+        "start_line": 21,
+        "end_line": 425,
+        "metrics": {
+          "coupling_count": 3,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 3,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 3,
+          "dependent_classes": [
+            "pygame.Color",
+            "pygame.Rect",
+            "pygame.surface.Surface"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "Sound",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/sound.py",
+        "start_line": 140,
+        "end_line": 644,
+        "metrics": {
+          "coupling_count": 3,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 2,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 3,
+          "dependent_classes": [
+            "Base",
+            "Path",
+            "mixer"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Base"
+        ]
+      },
+      {
+        "name": "FPSManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/fps.py",
+        "start_line": 17,
+        "end_line": 58,
+        "metrics": {
+          "coupling_count": 3,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 1,
+          "import_dependencies": 3,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "FPS",
+            "pygame.time.Clock"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "ImageManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/image.py",
+        "start_line": 32,
+        "end_line": 144,
+        "metrics": {
+          "coupling_count": 3,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 7,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 1,
+          "import_dependencies": 3,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "Image",
+            "pygame.Surface"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "MenuLinkManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/menulink.py",
+        "start_line": 20,
+        "end_line": 66,
+        "metrics": {
+          "coupling_count": 3,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 1,
+          "import_dependencies": 3,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "MenuLink",
+            "pygame_menu.Menu"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "Image",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/image.py",
+        "start_line": 31,
+        "end_line": 228,
+        "metrics": {
+          "coupling_count": 3,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 8,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 1,
+          "import_dependencies": 3,
+          "dependent_classes": [
+            "BaseImage",
+            "Widget",
+            "pygame.Surface"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Widget"
+        ]
+      },
+      {
+        "name": "MenuBar",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/menubar.py",
+        "start_line": 78,
+        "end_line": 815,
+        "metrics": {
+          "coupling_count": 3,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 9,
+          "instantiation_dependencies": 2,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 3,
+          "dependent_classes": [
+            "Widget",
+            "WidgetTransformationNotImplemented",
+            "pygame.Rect"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Widget"
+        ]
+      },
+      {
+        "name": "NoneWidget",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/none.py",
+        "start_line": 27,
+        "end_line": 176,
+        "metrics": {
+          "coupling_count": 3,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 2,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 3,
+          "dependent_classes": [
+            "Widget",
+            "WidgetTransformationNotImplemented",
+            "pygame.Rect"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Widget"
+        ]
+      },
+      {
+        "name": "ScrollBar",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/scrollbar.py",
+        "start_line": 46,
+        "end_line": 843,
+        "metrics": {
+          "coupling_count": 3,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 10,
+          "instantiation_dependencies": 2,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 3,
+          "dependent_classes": [
+            "Widget",
+            "WidgetTransformationNotImplemented",
+            "pygame.Rect"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Widget"
+        ]
+      },
+      {
+        "name": "SurfaceWidget",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/surface.py",
+        "start_line": 26,
+        "end_line": 118,
+        "metrics": {
+          "coupling_count": 3,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 1,
+          "import_dependencies": 3,
+          "dependent_classes": [
+            "Widget",
+            "WidgetTransformationNotImplemented",
+            "pygame.Surface"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Widget"
+        ]
+      },
+      {
+        "name": "Theme",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/themes.py",
+        "start_line": 106,
+        "end_line": 1207,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 12,
+          "instantiation_dependencies": 2,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "HighlightSelection",
+            "NoneSelection"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "Selection",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/core/selection.py",
+        "start_line": 29,
+        "end_line": 251,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 9,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 2,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "pygame.Rect",
+            "pygame_menu.BaseImage"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "ColorInputManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/colorinput.py",
+        "start_line": 32,
+        "end_line": 173,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 5,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "ColorInput"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "CounterManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/counter.py",
+        "start_line": 15,
+        "end_line": 56,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 1,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "Counter"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "DropSelectManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/dropselect.py",
+        "start_line": 30,
+        "end_line": 301,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "DropSelect"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "DropSelectMultipleManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/dropselect_multiple.py",
+        "start_line": 31,
+        "end_line": 345,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "DropSelectMultiple"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "FrameManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/frame.py",
+        "start_line": 28,
+        "end_line": 334,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "Frame"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "HMarginManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/hmargin.py",
+        "start_line": 23,
+        "end_line": 48,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "HMargin"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "LabelManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/label.py",
+        "start_line": 29,
+        "end_line": 312,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 1,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "Label"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "NoneWidgetManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/none.py",
+        "start_line": 19,
+        "end_line": 50,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 1,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "NoneWidget"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "ProgressBarManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/progressbar.py",
+        "start_line": 33,
+        "end_line": 182,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 4,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "ProgressBar"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "RangeSliderManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/rangeslider.py",
+        "start_line": 37,
+        "end_line": 223,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 6,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "RangeSlider"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "SelectorManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/selector.py",
+        "start_line": 31,
+        "end_line": 191,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "Selector"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "SurfaceWidgetManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/surface.py",
+        "start_line": 28,
+        "end_line": 133,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "SurfaceWidget"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "TableManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/table.py",
+        "start_line": 20,
+        "end_line": 82,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 1,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "Table"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "TextInputManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/textinput.py",
+        "start_line": 32,
+        "end_line": 189,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "TextInput"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "TimerManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/timer.py",
+        "start_line": 15,
+        "end_line": 61,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 1,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "Timer"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "ToggleSwitchManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/toggleswitch.py",
+        "start_line": 27,
+        "end_line": 214,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "ToggleSwitch"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "VFillManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/vfill.py",
+        "start_line": 23,
+        "end_line": 48,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "VFill"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "VMarginManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/vmargin.py",
+        "start_line": 23,
+        "end_line": 47,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "AbstractWidgetManager",
+            "VMargin"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "AbstractWidgetManager",
+          "ABC"
+        ]
+      },
+      {
+        "name": "FPS",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/fps.py",
+        "start_line": 10,
+        "end_line": 47,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 1,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 1,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "Label",
+            "pygame.time.Clock"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Label"
+        ]
+      },
+      {
+        "name": "Label",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/label.py",
+        "start_line": 32,
+        "end_line": 411,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 7,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "Widget",
+            "pygame.Rect"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Widget"
+        ]
+      },
+      {
+        "name": "ProgressBar",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/progressbar.py",
+        "start_line": 57,
+        "end_line": 447,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 11,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "Widget",
+            "WidgetTransformationNotImplemented"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Widget"
+        ]
+      },
+      {
+        "name": "Selector",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/selector.py",
+        "start_line": 73,
+        "end_line": 578,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 9,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "Widget",
+            "pygame.Rect"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Widget"
+        ]
+      },
+      {
+        "name": "ToggleSwitch",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/toggleswitch.py",
+        "start_line": 43,
+        "end_line": 554,
+        "metrics": {
+          "coupling_count": 2,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 10,
+          "instantiation_dependencies": 1,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 2,
+          "dependent_classes": [
+            "Widget",
+            "WidgetTransformationNotImplemented"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Widget"
+        ]
+      },
+      {
+        "name": "MenuAction",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/events.py",
+        "start_line": 57,
+        "end_line": 72,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "Enum"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Enum"
+        ]
+      },
+      {
+        "name": "ArrowSelection",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/selection/arrow_selection.py",
+        "start_line": 27,
+        "end_line": 142,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 4,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "Selection"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Selection"
+        ]
+      },
+      {
+        "name": "DotSelection",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/selection/dot.py",
+        "start_line": 23,
+        "end_line": 95,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "Selection"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Selection"
+        ]
+      },
+      {
+        "name": "DoubleArrowSelection",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/selection/double_arrow.py",
+        "start_line": 23,
+        "end_line": 97,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 4,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "ArrowSelection"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "ArrowSelection"
+        ]
+      },
+      {
+        "name": "HighlightSelection",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/selection/highlight.py",
+        "start_line": 24,
+        "end_line": 88,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "Selection"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Selection"
+        ]
+      },
+      {
+        "name": "ImageSelection",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/selection/image_selection.py",
+        "start_line": 24,
+        "end_line": 82,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 4,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "Selection"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Selection"
+        ]
+      },
+      {
+        "name": "LeftArrowSelection",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/selection/left_arrow.py",
+        "start_line": 24,
+        "end_line": 108,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 4,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "ArrowSelection"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "ArrowSelection"
+        ]
+      },
+      {
+        "name": "NoneSelection",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/selection/none.py",
+        "start_line": 23,
+        "end_line": 51,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "SimpleSelection"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "SimpleSelection"
+        ]
+      },
+      {
+        "name": "RightArrowSelection",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/selection/right_arrow.py",
+        "start_line": 24,
+        "end_line": 108,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 4,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "ArrowSelection"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "ArrowSelection"
+        ]
+      },
+      {
+        "name": "RoundedHighlightSelection",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/selection/rounded_highlight.py",
+        "start_line": 23,
+        "end_line": 66,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "HighlightSelection"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "HighlightSelection"
+        ]
+      },
+      {
+        "name": "SimpleSelection",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/selection/simple.py",
+        "start_line": 23,
+        "end_line": 58,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "Selection"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Selection"
+        ]
+      },
+      {
+        "name": "UnderlineSelection",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/selection/underline.py",
+        "start_line": 23,
+        "end_line": 97,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "Selection"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Selection"
+        ]
+      },
+      {
+        "name": "Button",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/button.py",
+        "start_line": 29,
+        "end_line": 168,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 5,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "Label"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Label"
+        ]
+      },
+      {
+        "name": "ColorInput",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/colorinput.py",
+        "start_line": 56,
+        "end_line": 672,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 8,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "TextInput"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "TextInput"
+        ]
+      },
+      {
+        "name": "Counter",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/counter.py",
+        "start_line": 8,
+        "end_line": 88,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "Label"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Label"
+        ]
+      },
+      {
+        "name": "DropSelectMultiple",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/dropselect_multiple.py",
+        "start_line": 53,
+        "end_line": 575,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 13,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "DropSelect"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "DropSelect"
+        ]
+      },
+      {
+        "name": "HMargin",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/hmargin.py",
+        "start_line": 22,
+        "end_line": 44,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "NoneWidget"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "NoneWidget"
+        ]
+      },
+      {
+        "name": "_MenuBarMode",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/menubar.py",
+        "start_line": 69,
+        "end_line": 71,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "IntEnum"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "IntEnum"
+        ]
+      },
+      {
+        "name": "MenuLink",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/menulink.py",
+        "start_line": 24,
+        "end_line": 60,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "NoneWidget"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "NoneWidget"
+        ]
+      },
+      {
+        "name": "Timer",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/timer.py",
+        "start_line": 10,
+        "end_line": 175,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "Label"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Label"
+        ]
+      },
+      {
+        "name": "VFill",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/vfill.py",
+        "start_line": 22,
+        "end_line": 78,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "NoneWidget"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "NoneWidget"
+        ]
+      },
+      {
+        "name": "VMargin",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/vmargin.py",
+        "start_line": 22,
+        "end_line": 42,
+        "metrics": {
+          "coupling_count": 1,
+          "inheritance_dependencies": 1,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 1,
+          "dependent_classes": [
+            "NoneWidget"
+          ]
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "NoneWidget"
+        ]
+      },
+      {
+        "name": "Base",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_base.py",
+        "start_line": 19,
+        "end_line": 206,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 1,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "PolygonDecoration",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_decorator.py",
+        "start_line": 74,
+        "end_line": 80,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "BezierDecoration",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_decorator.py",
+        "start_line": 84,
+        "end_line": 88,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "CircleDecoration",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_decorator.py",
+        "start_line": 92,
+        "end_line": 99,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "ArcDecoration",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_decorator.py",
+        "start_line": 103,
+        "end_line": 111,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "PieDecoration",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_decorator.py",
+        "start_line": 115,
+        "end_line": 121,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "BlitDecoration",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_decorator.py",
+        "start_line": 125,
+        "end_line": 129,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "RectangleDecoration",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_decorator.py",
+        "start_line": 133,
+        "end_line": 138,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "EllipseDecoration",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_decorator.py",
+        "start_line": 142,
+        "end_line": 148,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "PixelDecoration",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_decorator.py",
+        "start_line": 152,
+        "end_line": 155,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "TexturedPolygonDecoration",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_decorator.py",
+        "start_line": 159,
+        "end_line": 164,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "LineDecoration",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_decorator.py",
+        "start_line": 168,
+        "end_line": 173,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "_DecoratorCopyException",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_decorator.py",
+        "start_line": 1703,
+        "end_line": 1708,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Exception"
+        ]
+      },
+      {
+        "name": "_ScrollAreaCopyException",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_scrollarea.py",
+        "start_line": 1416,
+        "end_line": 1421,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Exception"
+        ]
+      },
+      {
+        "name": "Controller",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/controls.py",
+        "start_line": 86,
+        "end_line": 367,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 2,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "_MenuStats",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/menu.py",
+        "start_line": 4381,
+        "end_line": 4410,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "_MenuCopyException",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/menu.py",
+        "start_line": 4413,
+        "end_line": 4418,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Exception"
+        ]
+      },
+      {
+        "name": "_MenuRuntimeErrorConfig",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/menu.py",
+        "start_line": 4421,
+        "end_line": 4445,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "_MenuSizingException",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/menu.py",
+        "start_line": 4448,
+        "end_line": 4453,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Exception"
+        ]
+      },
+      {
+        "name": "_MenuWidgetOverflow",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/menu.py",
+        "start_line": 4456,
+        "end_line": 4461,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Exception"
+        ]
+      },
+      {
+        "name": "_MenuMultipleSelectedWidgetsException",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/menu.py",
+        "start_line": 4464,
+        "end_line": 4469,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Exception"
+        ]
+      },
+      {
+        "name": "SoundInitState",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/sound.py",
+        "start_line": 114,
+        "end_line": 123,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "SoundData",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/sound.py",
+        "start_line": 129,
+        "end_line": 137,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "TypedDict"
+        ]
+      },
+      {
+        "name": "TerminalColors",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/utils.py",
+        "start_line": 767,
+        "end_line": 785,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "Version",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/version.py",
+        "start_line": 14,
+        "end_line": 72,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "tuple"
+        ]
+      },
+      {
+        "name": "AbstractWidgetManager",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/core/abstract_widget.py",
+        "start_line": 24,
+        "end_line": 105,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 3,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "ABC"
+        ]
+      },
+      {
+        "name": "_WidgetCopyException",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/core/widget.py",
+        "start_line": 3413,
+        "end_line": 3418,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Exception"
+        ]
+      },
+      {
+        "name": "_WidgetNoValue",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/core/widget.py",
+        "start_line": 3421,
+        "end_line": 3426,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": []
+      },
+      {
+        "name": "WidgetTransformationNotImplemented",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/core/widget.py",
+        "start_line": 3429,
+        "end_line": 3434,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Exception"
+        ]
+      },
+      {
+        "name": "_SelectionDropNotMadeException",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/dropselect.py",
+        "start_line": 1449,
+        "end_line": 1454,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Exception"
+        ]
+      },
+      {
+        "name": "_FrameSizeException",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/frame.py",
+        "start_line": 1934,
+        "end_line": 1939,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Exception"
+        ]
+      },
+      {
+        "name": "_FrameDoNotAcceptScrollarea",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/frame.py",
+        "start_line": 1942,
+        "end_line": 1947,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Exception"
+        ]
+      },
+      {
+        "name": "_FrameDoNotAcceptTitle",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/frame.py",
+        "start_line": 1950,
+        "end_line": 1955,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "Exception"
+        ]
+      },
+      {
+        "name": "PyperclipException",
+        "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/textinput.py",
+        "start_line": 54,
+        "end_line": 57,
+        "metrics": {
+          "coupling_count": 0,
+          "inheritance_dependencies": 0,
+          "type_hint_dependencies": 0,
+          "instantiation_dependencies": 0,
+          "attribute_access_dependencies": 0,
+          "import_dependencies": 0,
+          "dependent_classes": []
+        },
+        "risk_level": "low",
+        "is_abstract": false,
+        "base_classes": [
+          "RuntimeError"
+        ]
+      }
+    ],
+    "summary": {
+      "total_classes": 103,
+      "average_cbo": 2.0194174757281553,
+      "max_cbo": 29,
+      "min_cbo": 0,
+      "classes_analyzed": 103,
+      "files_analyzed": 85,
+      "low_risk_classes": 91,
+      "medium_risk_classes": 8,
+      "high_risk_classes": 4,
+      "cbo_distribution": {
+        "0": 34,
+        "1-5": 60,
+        "11-20": 1,
+        "21-50": 1,
+        "6-10": 7
+      },
+      "most_coupled_classes": [
+        {
+          "name": "WidgetManager",
+          "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_widgetmanager.py",
+          "start_line": 55,
+          "end_line": 571,
+          "metrics": {
+            "coupling_count": 29,
+            "inheritance_dependencies": 23,
+            "type_hint_dependencies": 3,
+            "instantiation_dependencies": 1,
+            "attribute_access_dependencies": 5,
+            "import_dependencies": 29,
+            "dependent_classes": [
+              "Base",
+              "ButtonManager",
+              "ColorInputManager",
+              "CounterManager",
+              "DropSelectManager",
+              "DropSelectMultipleManager",
+              "FPSManager",
+              "FrameManager",
+              "HMarginManager",
+              "ImageManager",
+              "LabelManager",
+              "MenuLinkManager",
+              "NoneWidgetManager",
+              "ProgressBarManager",
+              "RangeSliderManager",
+              "SelectorManager",
+              "SurfaceWidgetManager",
+              "TableManager",
+              "TextInputManager",
+              "TimerManager",
+              "ToggleSwitchManager",
+              "VFillManager",
+              "VMarginManager",
+              "pygame_menu.BaseImage",
+              "pygame_menu.Menu",
+              "pygame_menu.menu._MenuSizingException",
+              "pygame_menu.menu._MenuWidgetOverflow",
+              "pygame_menu.widgets.Button",
+              "pygame_menu.widgets.NoneSelection"
+            ]
+          },
+          "risk_level": "high",
+          "is_abstract": false,
+          "base_classes": [
+            "Base",
+            "ButtonManager",
+            "ColorInputManager",
+            "CounterManager",
+            "DropSelectManager",
+            "DropSelectMultipleManager",
+            "FPSManager",
+            "FrameManager",
+            "HMarginManager",
+            "ImageManager",
+            "LabelManager",
+            "MenuLinkManager",
+            "NoneWidgetManager",
+            "ProgressBarManager",
+            "RangeSliderManager",
+            "SelectorManager",
+            "SurfaceWidgetManager",
+            "TableManager",
+            "TextInputManager",
+            "TimerManager",
+            "ToggleSwitchManager",
+            "VFillManager",
+            "VMarginManager"
+          ]
+        },
+        {
+          "name": "Menu",
+          "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/menu.py",
+          "start_line": 97,
+          "end_line": 4378,
+          "metrics": {
+            "coupling_count": 12,
+            "inheritance_dependencies": 1,
+            "type_hint_dependencies": 26,
+            "instantiation_dependencies": 10,
+            "attribute_access_dependencies": 1,
+            "import_dependencies": 12,
+            "dependent_classes": [
+              "Base",
+              "Controller",
+              "Decorator",
+              "MenuBar",
+              "ScrollArea",
+              "Sound",
+              "THEME_DEFAULT",
+              "WidgetManager",
+              "pygame.Rect",
+              "pygame.Surface",
+              "pygame.joystick.Joystick",
+              "pygame.time.Clock"
+            ]
+          },
+          "risk_level": "high",
+          "is_abstract": false,
+          "base_classes": [
+            "Base"
+          ]
+        },
+        {
+          "name": "Widget",
+          "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/core/widget.py",
+          "start_line": 265,
+          "end_line": 3410,
+          "metrics": {
+            "coupling_count": 10,
+            "inheritance_dependencies": 1,
+            "type_hint_dependencies": 33,
+            "instantiation_dependencies": 5,
+            "attribute_access_dependencies": 4,
+            "import_dependencies": 10,
+            "dependent_classes": [
+              "Base",
+              "Controller",
+              "Decorator",
+              "Sound",
+              "pygame.Rect",
+              "pygame_menu.BaseImage",
+              "pygame_menu._scrollarea.ScrollArea",
+              "pygame_menu.widgets.DropSelect",
+              "pygame_menu.widgets.Frame",
+              "pygame_menu.widgets.NoneSelection"
+            ]
+          },
+          "risk_level": "high",
+          "is_abstract": false,
+          "base_classes": [
+            "Base"
+          ]
+        },
+        {
+          "name": "TextInput",
+          "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/textinput.py",
+          "start_line": 108,
+          "end_line": 2118,
+          "metrics": {
+            "coupling_count": 10,
+            "inheritance_dependencies": 1,
+            "type_hint_dependencies": 10,
+            "instantiation_dependencies": 3,
+            "attribute_access_dependencies": 6,
+            "import_dependencies": 10,
+            "dependent_classes": [
+              "Widget",
+              "WidgetTransformationNotImplemented",
+              "pygame.K_a",
+              "pygame.K_c",
+              "pygame.K_v",
+              "pygame.K_x",
+              "pygame.K_y",
+              "pygame.K_z",
+              "pygame.event.Event",
+              "pygame.time.Clock"
+            ]
+          },
+          "risk_level": "high",
+          "is_abstract": false,
+          "base_classes": [
+            "Widget"
+          ]
+        },
+        {
+          "name": "Frame",
+          "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/frame.py",
+          "start_line": 94,
+          "end_line": 1931,
+          "metrics": {
+            "coupling_count": 7,
+            "inheritance_dependencies": 1,
+            "type_hint_dependencies": 20,
+            "instantiation_dependencies": 5,
+            "attribute_access_dependencies": 1,
+            "import_dependencies": 7,
+            "dependent_classes": [
+              "Button",
+              "Label",
+              "Widget",
+              "WidgetTransformationNotImplemented",
+              "pygame.Rect",
+              "pygame_menu.BaseImage",
+              "pygame_menu._scrollarea.ScrollArea"
+            ]
+          },
+          "risk_level": "medium",
+          "is_abstract": false,
+          "base_classes": [
+            "Widget"
+          ]
+        },
+        {
+          "name": "ScrollArea",
+          "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_scrollarea.py",
+          "start_line": 105,
+          "end_line": 1413,
+          "metrics": {
+            "coupling_count": 6,
+            "inheritance_dependencies": 1,
+            "type_hint_dependencies": 16,
+            "instantiation_dependencies": 3,
+            "attribute_access_dependencies": 3,
+            "import_dependencies": 6,
+            "dependent_classes": [
+              "Base",
+              "Decorator",
+              "ScrollBar",
+              "pygame.Rect",
+              "pygame.Surface",
+              "pygame_menu.BaseImage"
+            ]
+          },
+          "risk_level": "medium",
+          "is_abstract": false,
+          "base_classes": [
+            "Base"
+          ]
+        },
+        {
+          "name": "BaseImage",
+          "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/baseimage.py",
+          "start_line": 146,
+          "end_line": 1034,
+          "metrics": {
+            "coupling_count": 6,
+            "inheritance_dependencies": 1,
+            "type_hint_dependencies": 13,
+            "instantiation_dependencies": 4,
+            "attribute_access_dependencies": 2,
+            "import_dependencies": 6,
+            "dependent_classes": [
+              "Base",
+              "BytesIO",
+              "Path",
+              "pygame.Color",
+              "pygame.Rect",
+              "pygame.Surface"
+            ]
+          },
+          "risk_level": "medium",
+          "is_abstract": false,
+          "base_classes": [
+            "Base"
+          ]
+        },
+        {
+          "name": "ButtonManager",
+          "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/button.py",
+          "start_line": 42,
+          "end_line": 500,
+          "metrics": {
+            "coupling_count": 6,
+            "inheritance_dependencies": 1,
+            "type_hint_dependencies": 6,
+            "instantiation_dependencies": 3,
+            "attribute_access_dependencies": 2,
+            "import_dependencies": 6,
+            "dependent_classes": [
+              "AbstractWidgetManager",
+              "Button",
+              "pygame.Surface",
+              "pygame_menu.BaseImage",
+              "pygame_menu.Menu",
+              "pygame_menu.widgets.NoneSelection"
+            ]
+          },
+          "risk_level": "medium",
+          "is_abstract": false,
+          "base_classes": [
+            "AbstractWidgetManager",
+            "ABC"
+          ]
+        },
+        {
+          "name": "Table",
+          "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/table.py",
+          "start_line": 67,
+          "end_line": 929,
+          "metrics": {
+            "coupling_count": 6,
+            "inheritance_dependencies": 1,
+            "type_hint_dependencies": 12,
+            "instantiation_dependencies": 5,
+            "attribute_access_dependencies": 1,
+            "import_dependencies": 6,
+            "dependent_classes": [
+              "Frame",
+              "Image",
+              "Label",
+              "SurfaceWidget",
+              "pygame.Rect",
+              "pygame.Surface"
+            ]
+          },
+          "risk_level": "medium",
+          "is_abstract": false,
+          "base_classes": [
+            "Frame"
+          ]
+        },
+        {
+          "name": "DropSelect",
+          "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/dropselect.py",
+          "start_line": 67,
+          "end_line": 1446,
+          "metrics": {
+            "coupling_count": 5,
+            "inheritance_dependencies": 1,
+            "type_hint_dependencies": 20,
+            "instantiation_dependencies": 4,
+            "attribute_access_dependencies": 0,
+            "import_dependencies": 5,
+            "dependent_classes": [
+              "Button",
+              "Frame",
+              "Widget",
+              "WidgetTransformationNotImplemented",
+              "pygame.Rect"
+            ]
+          },
+          "risk_level": "medium",
+          "is_abstract": false,
+          "base_classes": [
+            "Widget"
+          ]
+        }
+      ],
+      "most_depended_upon_classes": null
+    },
+    "warnings": [
+      "[/tmp/bridge-builder/pygame-menu/build_package.py] No classes found in file",
+      "[/tmp/bridge-builder/pygame-menu/pygame_menu/__init__.py] No classes found in file",
+      "[/tmp/bridge-builder/pygame-menu/pygame_menu/__pyinstaller/__init__.py] No classes found in file",
+      "[/tmp/bridge-builder/pygame-menu/pygame_menu/__pyinstaller/hook-pygame_menu.py] No classes found in file",
+      "[/tmp/bridge-builder/pygame-menu/pygame_menu/_types.py] No classes found in file",
+      "[/tmp/bridge-builder/pygame-menu/pygame_menu/font.py] No classes found in file",
+      "[/tmp/bridge-builder/pygame-menu/pygame_menu/locals.py] No classes found in file",
+      "[/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/__init__.py] No classes found in file",
+      "[/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/core/__init__.py] No classes found in file",
+      "[/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/__init__.py] No classes found in file",
+      "[/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/selection/__init__.py] No classes found in file",
+      "[/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/__init__.py] No classes found in file"
+    ],
+    "errors": [],
+    "generated_at": "2026-10-31T09:09:11Z",
+    "version": "dev",
+    "config": {
+      "group_namespace_imports": true,
+      "include_builtins": false,
+      "include_imports": true,
+      "low_threshold": 3,
+      "max_cbo": 0,
+      "medium_threshold": 7,
+      "min_cbo": 0,
+      "output_format": "json",
+      "show_zeros": true,
+      "sort_by": "coupling"
+    }
+  },
+  "suggestions": [
+    {
+      "category": "coupling",
+      "severity": "warning",
+      "effort": "moderate",
+      "title": "Reduce coupling in class 'Frame'",
+      "description": "Class 'Frame' depends on 7 other classes (Button, Label, Widget, WidgetTransformationNotImplemented, pygame.Rect, pygame_menu.BaseImage, pygame_menu._scrollarea.ScrollArea). Consider applying dependency inversion or splitting responsibilities.",
+      "steps": [
+        "Review the 7 dependencies: Button, Label, Widget, WidgetTransformationNotImplemented, pygame.Rect, pygame_menu.BaseImage, pygame_menu._scrollarea.ScrollArea",
+        "Look for dependencies that can be removed or replaced with interfaces"
+      ],
+      "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/frame.py",
+      "class_name": "Frame",
+      "start_line": 94,
+      "metric_value": "7",
+      "threshold": "7"
+    },
+    {
+      "category": "coupling",
+      "severity": "warning",
+      "effort": "moderate",
+      "title": "Reduce coupling in class 'ScrollArea'",
+      "description": "Class 'ScrollArea' depends on 6 other classes (Base, Decorator, ScrollBar, pygame.Rect, pygame.Surface, pygame_menu.BaseImage). Consider applying dependency inversion or splitting responsibilities.",
+      "steps": [
+        "Review the 6 dependencies: Base, Decorator, ScrollBar, pygame.Rect, pygame.Surface, pygame_menu.BaseImage",
+        "Look for dependencies that can be removed or replaced with interfaces"
+      ],
+      "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_scrollarea.py",
+      "class_name": "ScrollArea",
+      "start_line": 105,
+      "metric_value": "6",
+      "threshold": "7"
+    },
+    {
+      "category": "coupling",
+      "severity": "warning",
+      "effort": "moderate",
+      "title": "Reduce coupling in class 'BaseImage'",
+      "description": "Class 'BaseImage' depends on 6 other classes (Base, BytesIO, Path, pygame.Color, pygame.Rect, pygame.Surface). Consider applying dependency inversion or splitting responsibilities.",
+      "steps": [
+        "Review the 6 dependencies: Base, BytesIO, Path, pygame.Color, pygame.Rect, pygame.Surface",
+        "Look for dependencies that can be removed or replaced with interfaces"
+      ],
+      "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/baseimage.py",
+      "class_name": "BaseImage",
+      "start_line": 146,
+      "metric_value": "6",
+      "threshold": "7"
+    },
+    {
+      "category": "coupling",
+      "severity": "warning",
+      "effort": "moderate",
+      "title": "Reduce coupling in class 'ButtonManager'",
+      "description": "Class 'ButtonManager' depends on 6 other classes (AbstractWidgetManager, Button, pygame.Surface, pygame_menu.BaseImage, pygame_menu.Menu, pygame_menu.widgets.NoneSelection). Consider applying dependency inversion or splitting responsibilities.",
+      "steps": [
+        "Review the 6 dependencies: AbstractWidgetManager, Button, pygame.Surface, pygame_menu.BaseImage, pygame_menu.Menu, pygame_menu.widgets.NoneSelection",
+        "Look for dependencies that can be removed or replaced with interfaces"
+      ],
+      "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/manager/button.py",
+      "class_name": "ButtonManager",
+      "start_line": 42,
+      "metric_value": "6",
+      "threshold": "7"
+    },
+    {
+      "category": "coupling",
+      "severity": "warning",
+      "effort": "moderate",
+      "title": "Reduce coupling in class 'Table'",
+      "description": "Class 'Table' depends on 6 other classes (Frame, Image, Label, SurfaceWidget, pygame.Rect, pygame.Surface). Consider applying dependency inversion or splitting responsibilities.",
+      "steps": [
+        "Review the 6 dependencies: Frame, Image, Label, SurfaceWidget, pygame.Rect, pygame.Surface",
+        "Look for dependencies that can be removed or replaced with interfaces"
+      ],
+      "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/table.py",
+      "class_name": "Table",
+      "start_line": 67,
+      "metric_value": "6",
+      "threshold": "7"
+    },
+    {
+      "category": "coupling",
+      "severity": "warning",
+      "effort": "moderate",
+      "title": "Reduce coupling in class 'DropSelect'",
+      "description": "Class 'DropSelect' depends on 5 other classes (Button, Frame, Widget, WidgetTransformationNotImplemented, pygame.Rect). Consider applying dependency inversion or splitting responsibilities.",
+      "steps": [
+        "Review the 5 dependencies: Button, Frame, Widget, WidgetTransformationNotImplemented, pygame.Rect",
+        "Look for dependencies that can be removed or replaced with interfaces"
+      ],
+      "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/dropselect.py",
+      "class_name": "DropSelect",
+      "start_line": 67,
+      "metric_value": "5",
+      "threshold": "7"
+    },
+    {
+      "category": "coupling",
+      "severity": "critical",
+      "effort": "hard",
+      "title": "Reduce coupling in class 'WidgetManager'",
+      "description": "Class 'WidgetManager' depends on 29 other classes (Base, ButtonManager, ColorInputManager, CounterManager, DropSelectManager, DropSelectMultipleManager, FPSManager, FrameManager, HMarginManager, ImageManager, LabelManager, MenuLinkManager, NoneWidgetManager, ProgressBarManager, RangeSliderManager, SelectorManager, SurfaceWidgetManager, TableManager, TextInputManager, TimerManager, ToggleSwitchManager, VFillManager, VMarginManager, pygame_menu.BaseImage, pygame_menu.Menu, pygame_menu.menu._MenuSizingException, pygame_menu.menu._MenuWidgetOverflow, pygame_menu.widgets.Button, pygame_menu.widgets.NoneSelection). Consider applying dependency inversion or splitting responsibilities.",
+      "steps": [
+        "List the 29 dependencies: Base, ButtonManager, ColorInputManager, CounterManager, DropSelectManager, DropSelectMultipleManager, FPSManager, FrameManager, HMarginManager, ImageManager, LabelManager, MenuLinkManager, NoneWidgetManager, ProgressBarManager, RangeSliderManager, SelectorManager, SurfaceWidgetManager, TableManager, TextInputManager, TimerManager, ToggleSwitchManager, VFillManager, VMarginManager, pygame_menu.BaseImage, pygame_menu.Menu, pygame_menu.menu._MenuSizingException, pygame_menu.menu._MenuWidgetOverflow, pygame_menu.widgets.Button, pygame_menu.widgets.NoneSelection",
+        "Introduce interfaces for the most-used dependencies (dependency inversion)",
+        "Consider splitting 'WidgetManager' if it has multiple responsibilities"
+      ],
+      "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/_widgetmanager.py",
+      "class_name": "WidgetManager",
+      "start_line": 55,
+      "metric_value": "29",
+      "threshold": "7"
+    },
+    {
+      "category": "coupling",
+      "severity": "critical",
+      "effort": "hard",
+      "title": "Reduce coupling in class 'Menu'",
+      "description": "Class 'Menu' depends on 12 other classes (Base, Controller, Decorator, MenuBar, ScrollArea, Sound, THEME_DEFAULT, WidgetManager, pygame.Rect, pygame.Surface, pygame.joystick.Joystick, pygame.time.Clock). Consider applying dependency inversion or splitting responsibilities.",
+      "steps": [
+        "List the 12 dependencies: Base, Controller, Decorator, MenuBar, ScrollArea, Sound, THEME_DEFAULT, WidgetManager, pygame.Rect, pygame.Surface, pygame.joystick.Joystick, pygame.time.Clock",
+        "Introduce interfaces for the most-used dependencies (dependency inversion)",
+        "Consider splitting 'Menu' if it has multiple responsibilities"
+      ],
+      "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/menu.py",
+      "class_name": "Menu",
+      "start_line": 97,
+      "metric_value": "12",
+      "threshold": "7"
+    },
+    {
+      "category": "coupling",
+      "severity": "critical",
+      "effort": "hard",
+      "title": "Reduce coupling in class 'Widget'",
+      "description": "Class 'Widget' depends on 10 other classes (Base, Controller, Decorator, Sound, pygame.Rect, pygame_menu.BaseImage, pygame_menu._scrollarea.ScrollArea, pygame_menu.widgets.DropSelect, pygame_menu.widgets.Frame, pygame_menu.widgets.NoneSelection). Consider applying dependency inversion or splitting responsibilities.",
+      "steps": [
+        "List the 10 dependencies: Base, Controller, Decorator, Sound, pygame.Rect, pygame_menu.BaseImage, pygame_menu._scrollarea.ScrollArea, pygame_menu.widgets.DropSelect, pygame_menu.widgets.Frame, pygame_menu.widgets.NoneSelection",
+        "Introduce interfaces for the most-used dependencies (dependency inversion)",
+        "Consider splitting 'Widget' if it has multiple responsibilities"
+      ],
+      "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/core/widget.py",
+      "class_name": "Widget",
+      "start_line": 265,
+      "metric_value": "10",
+      "threshold": "7"
+    },
+    {
+      "category": "coupling",
+      "severity": "critical",
+      "effort": "hard",
+      "title": "Reduce coupling in class 'TextInput'",
+      "description": "Class 'TextInput' depends on 10 other classes (Widget, WidgetTransformationNotImplemented, pygame.K_a, pygame.K_c, pygame.K_v, pygame.K_x, pygame.K_y, pygame.K_z, pygame.event.Event, pygame.time.Clock). Consider applying dependency inversion or splitting responsibilities.",
+      "steps": [
+        "List the 10 dependencies: Widget, WidgetTransformationNotImplemented, pygame.K_a, pygame.K_c, pygame.K_v, pygame.K_x, pygame.K_y, pygame.K_z, pygame.event.Event, pygame.time.Clock",
+        "Introduce interfaces for the most-used dependencies (dependency inversion)",
+        "Consider splitting 'TextInput' if it has multiple responsibilities"
+      ],
+      "file_path": "/tmp/bridge-builder/pygame-menu/pygame_menu/widgets/widget/textinput.py",
+      "class_name": "TextInput",
+      "start_line": 108,
+      "metric_value": "10",
+      "threshold": "7"
+    }
+  ],
+  "summary": {
+    "total_files": 85,
+    "analyzed_files": 85,
+    "skipped_files": 0,
+    "complexity_enabled": false,
+    "dead_code_enabled": false,
+    "clone_enabled": false,
+    "cbo_enabled": true,
+    "mock_data_enabled": false,
+    "deps_enabled": false,
+    "arch_enabled": false,
+    "communities_enabled": false,
+    "deps_total_modules": 0,
+    "deps_modules_in_cycles": 0,
+    "deps_max_depth": 0,
+    "deps_main_sequence_deviation": 0,
+    "arch_compliance": 0,
+    "community_count": 0,
+    "community_total_modules": 0,
+    "community_modularity": 0,
+    "community_bridge_modules": 0,
+    "community_internal_edges": 0,
+    "community_cross_edges": 0,
+    "total_functions": 0,
+    "total_class_scopes": 0,
+    "max_class_complexity": 0,
+    "max_class_cognitive_complexity": 0,
+    "max_class_nesting_depth": 0,
+    "high_complexity_class_scope_count": 0,
+    "functions_parsed": 0,
+    "average_complexity": 0,
+    "average_cognitive_complexity": 0,
+    "average_nesting_depth": 0,
+    "high_complexity_count": 0,
+    "dead_code_count": 0,
+    "critical_dead_code": 0,
+    "warning_dead_code": 0,
+    "info_dead_code": 0,
+    "total_clones": 0,
+    "clone_pairs": 0,
+    "clone_groups": 0,
+    "code_duplication_percentage": 0,
+    "cbo_classes": 103,
+    "high_coupling_classes": 4,
+    "medium_coupling_classes": 8,
+    "average_coupling": 2.0194174757281553,
+    "lcom_enabled": false,
+    "lcom_classes": 0,
+    "high_lcom_classes": 0,
+    "medium_lcom_classes": 0,
+    "average_lcom": 0,
+    "mock_data_count": 0,
+    "mock_data_error_count": 0,
+    "mock_data_warning_count": 0,
+    "mock_data_info_count": 0,
+    "health_score": 97,
+    "grade": "A",
+    "complexity_score": 100,
+    "dead_code_score": 100,
+    "duplication_score": 100,
+    "coupling_score": 85,
+    "cohesion_score": 100,
+    "dependency_score": 100,
+    "architecture_score": 0,
+    "community_score": 100,
+    "community_scored": false,
+    "community_risk_score": 0
+  },
+  "schema_version": 2,
+  "generated_at": "2026-10-31T09:09:11.90909035Z",
+  "duration_ms": 833,
+  "version": "dev"
+}

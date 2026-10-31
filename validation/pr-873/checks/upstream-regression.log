@@ -1,0 +1,4 @@
+=== RUN   TestCBOAnalyzer_DottedClassReferenceAsCallArgument
+--- PASS: TestCBOAnalyzer_DottedClassReferenceAsCallArgument (0.00s)
+PASS
+ok  	github.com/ludo-technologies/pyscn/internal/analyzer	0.007s

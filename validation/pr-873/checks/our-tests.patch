@@ -1,0 +1,174 @@
+diff --git a/internal/analyzer/cbo_test.go b/internal/analyzer/cbo_test.go
+index 5513899c..ce2e9d8b 100644
+--- a/internal/analyzer/cbo_test.go
++++ b/internal/analyzer/cbo_test.go
+@@ -1483,6 +1483,169 @@ class Widget:
+ 	assert.Equal(t, 0, widget.CouplingCount)
+ }
+ 
++func TestCBOAnalyzer_QualifiedClassCallArguments(t *testing.T) {
++	t.Run("qualified class passed directly to isinstance is counted", func(t *testing.T) {
++		pythonCode := `
++import pkg.models
++
++class Direct:
++    def check(self, x):
++        return isinstance(x, pkg.models.Frame)
++`
++
++		ast, err := parseCode(pythonCode)
++		require.NoError(t, err)
++
++		results, err := NewCBOAnalyzer(DefaultCBOOptions()).AnalyzeClasses(ast, "direct.py")
++		require.NoError(t, err)
++		require.Len(t, results, 1)
++
++		direct := results[0]
++		assert.Equal(t, "Direct", direct.ClassName)
++		assert.Equal(t, []string{"pkg.models.Frame"}, direct.DependentClasses)
++		assert.Equal(t, 1, direct.CouplingCount)
++	})
++
++	t.Run("qualified class passed directly to ordinary function is counted", func(t *testing.T) {
++		pythonCode := `
++import pkg.models
++
++class Passed:
++    def check(self, f):
++        return f(pkg.models.Other)
++`
++
++		ast, err := parseCode(pythonCode)
++		require.NoError(t, err)
++
++		results, err := NewCBOAnalyzer(DefaultCBOOptions()).AnalyzeClasses(ast, "passed.py")
++		require.NoError(t, err)
++		require.Len(t, results, 1)
++
++		passed := results[0]
++		assert.Equal(t, "Passed", passed.ClassName)
++		assert.Equal(t, []string{"pkg.models.Other"}, passed.DependentClasses)
++		assert.Equal(t, 1, passed.CouplingCount)
++	})
++
++	t.Run("same class wrapped in tuple is still counted", func(t *testing.T) {
++		pythonCode := `
++import pkg.models
++
++class Wrapped:
++    def check(self, x):
++        return isinstance(x, (pkg.models.Frame,))
++`
++
++		ast, err := parseCode(pythonCode)
++		require.NoError(t, err)
++
++		results, err := NewCBOAnalyzer(DefaultCBOOptions()).AnalyzeClasses(ast, "wrapped.py")
++		require.NoError(t, err)
++		require.Len(t, results, 1)
++
++		wrapped := results[0]
++		assert.Equal(t, "Wrapped", wrapped.ClassName)
++		assert.Equal(t, []string{"pkg.models.Frame"}, wrapped.DependentClasses)
++		assert.Equal(t, 1, wrapped.CouplingCount)
++	})
++
++	t.Run("keyword argument to ordinary function is counted", func(t *testing.T) {
++		pythonCode := `
++import pkg.models
++
++class KeywordUser:
++    def check(self, value=None):
++        return f(cls=pkg.models.Frame)
++`
++
++		ast, err := parseCode(pythonCode)
++		require.NoError(t, err)
++
++		results, err := NewCBOAnalyzer(DefaultCBOOptions()).AnalyzeClasses(ast, "keyword_user.py")
++		require.NoError(t, err)
++		require.Len(t, results, 1)
++
++		keywordUser := results[0]
++		assert.Equal(t, "KeywordUser", keywordUser.ClassName)
++		assert.Equal(t, []string{"pkg.models.Frame"}, keywordUser.DependentClasses)
++		assert.Equal(t, 1, keywordUser.CouplingCount)
++	})
++
++	t.Run("qualified class used as callee is counted once", func(t *testing.T) {
++		pythonCode := `
++import models as model_types
++
++class CalleeUser:
++    def build(self):
++        return model_types.Widget()
++`
++
++		ast, err := parseCode(pythonCode)
++		require.NoError(t, err)
++
++		options := DefaultCBOOptions()
++		options.GroupNamespaceImports = false
++		results, err := NewCBOAnalyzer(options).AnalyzeClasses(ast, "callee_user.py")
++		require.NoError(t, err)
++		require.Len(t, results, 1)
++
++		calleeUser := results[0]
++		assert.Equal(t, "CalleeUser", calleeUser.ClassName)
++		assert.Equal(t, []string{"model_types.Widget"}, calleeUser.DependentClasses)
++		assert.Equal(t, 1, calleeUser.CouplingCount)
++	})
++
++	t.Run("repeated references to the same class count once", func(t *testing.T) {
++		pythonCode := `
++import pkg.models
++
++class Repeated:
++    def check(self, x, y):
++        return isinstance(x, pkg.models.Frame) and isinstance(y, pkg.models.Frame)
++`
++
++		ast, err := parseCode(pythonCode)
++		require.NoError(t, err)
++
++		results, err := NewCBOAnalyzer(DefaultCBOOptions()).AnalyzeClasses(ast, "repeated.py")
++		require.NoError(t, err)
++		require.Len(t, results, 1)
++
++		repeated := results[0]
++		assert.Equal(t, "Repeated", repeated.ClassName)
++		assert.Equal(t, []string{"pkg.models.Frame"}, repeated.DependentClasses)
++		assert.Equal(t, 1, repeated.CouplingCount)
++	})
++
++	t.Run("non class references are not counted", func(t *testing.T) {
++		pythonCode := `
++import os
++from contextlib import suppress
++
++class NotClassy:
++    def run(self):
++        cwd = os.getcwd()
++        path = os.path.realpath(cwd)
++        with suppress(KeyError):
++            x = len(cwd)
++        return os.getcwd()
++`
++
++		ast, err := parseCode(pythonCode)
++		require.NoError(t, err)
++
++		results, err := NewCBOAnalyzer(DefaultCBOOptions()).AnalyzeClasses(ast, "not_classy.py")
++		require.NoError(t, err)
++		require.Len(t, results, 1)
++
++		notClassy := results[0]
++		assert.Equal(t, "NotClassy", notClassy.ClassName)
++		assert.Empty(t, notClassy.DependentClasses)
++		assert.Equal(t, 0, notClassy.CouplingCount)
++	})
++}
++
+ // Helper function to parse Python code into AST
+ func TestCBOAnalyzer_LocalHelperClassNotCounted(t *testing.T) {
+ 	// Regression test for https://github.com/ludo-technologies/pyscn/issues/547

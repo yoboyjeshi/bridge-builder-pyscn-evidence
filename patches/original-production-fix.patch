@@ -1,0 +1,24 @@
+diff --git a/internal/analyzer/cbo.go b/internal/analyzer/cbo.go
+index d767050d..e8afe95f 100644
+--- a/internal/analyzer/cbo.go
++++ b/internal/analyzer/cbo.go
+@@ -936,7 +936,18 @@ func (a *CBOAnalyzer) shouldSkipAttributeAccess(node *parser.Node) bool {
+ 		return true
+ 	}
+ 	if node.Parent != nil && node.Parent.Type == parser.NodeCall {
+-		return true
++		// Only skip when this attribute is the call's own callee (e.g.
++		// pkg.models.Frame(...)); positional arguments such as
++		// f(pkg.models.Frame) are analyzed as dependencies.
++		callee := node.Parent.Left
++		if callee == nil && node.Parent.Value != nil {
++			if valueNode, ok := node.Parent.Value.(*parser.Node); ok {
++				callee = valueNode
++			}
++		}
++		if callee != nil && callee == node {
++			return true
++		}
+ 	}
+ 	if a.isWithinTypeAnnotation(node) || a.isWithinClassBase(node) {
+ 		return true

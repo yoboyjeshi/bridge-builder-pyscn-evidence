@@ -1,0 +1,97 @@
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_passed_directly_to_isinstance_is_counted
+    cbo_test.go:1505: 
+        	Error Trace:	/home/USER/workspace/bridge-builder/pyscn/internal/analyzer/cbo_test.go:1505
+        	Error:      	Not equal: 
+        	            	expected: []string{"pkg.models.Frame"}
+        	            	actual  : []string{}
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1,3 +1,2 @@
+        	            	-([]string) (len=1) {
+        	            	- (string) (len=16) "pkg.models.Frame"
+        	            	+([]string) {
+        	            	 }
+        	Test:       	TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_passed_directly_to_isinstance_is_counted
+    cbo_test.go:1506: 
+        	Error Trace:	/home/USER/workspace/bridge-builder/pyscn/internal/analyzer/cbo_test.go:1506
+        	Error:      	Not equal: 
+        	            	expected: 1
+        	            	actual  : 0
+        	Test:       	TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_passed_directly_to_isinstance_is_counted
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_passed_directly_to_ordinary_function_is_counted
+    cbo_test.go:1527: 
+        	Error Trace:	/home/USER/workspace/bridge-builder/pyscn/internal/analyzer/cbo_test.go:1527
+        	Error:      	Not equal: 
+        	            	expected: []string{"pkg.models.Other"}
+        	            	actual  : []string{}
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1,3 +1,2 @@
+        	            	-([]string) (len=1) {
+        	            	- (string) (len=16) "pkg.models.Other"
+        	            	+([]string) {
+        	            	 }
+        	Test:       	TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_passed_directly_to_ordinary_function_is_counted
+    cbo_test.go:1528: 
+        	Error Trace:	/home/USER/workspace/bridge-builder/pyscn/internal/analyzer/cbo_test.go:1528
+        	Error:      	Not equal: 
+        	            	expected: 1
+        	            	actual  : 0
+        	Test:       	TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_passed_directly_to_ordinary_function_is_counted
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/same_class_wrapped_in_tuple_is_still_counted
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/keyword_argument_to_ordinary_function_is_counted
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_used_as_callee_is_counted_once
+    cbo_test.go:1593: 
+        	Error Trace:	/home/USER/workspace/bridge-builder/pyscn/internal/analyzer/cbo_test.go:1593
+        	Error:      	Not equal: 
+        	            	expected: []string{"model_types.Widget"}
+        	            	actual  : []string{"model_types"}
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1,3 +1,3 @@
+        	            	 ([]string) (len=1) {
+        	            	- (string) (len=18) "model_types.Widget"
+        	            	+ (string) (len=11) "model_types"
+        	            	 }
+        	Test:       	TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_used_as_callee_is_counted_once
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/repeated_references_to_the_same_class_count_once
+    cbo_test.go:1615: 
+        	Error Trace:	/home/USER/workspace/bridge-builder/pyscn/internal/analyzer/cbo_test.go:1615
+        	Error:      	Not equal: 
+        	            	expected: []string{"pkg.models.Frame"}
+        	            	actual  : []string{}
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1,3 +1,2 @@
+        	            	-([]string) (len=1) {
+        	            	- (string) (len=16) "pkg.models.Frame"
+        	            	+([]string) {
+        	            	 }
+        	Test:       	TestCBOAnalyzer_QualifiedClassCallArguments/repeated_references_to_the_same_class_count_once
+    cbo_test.go:1616: 
+        	Error Trace:	/home/USER/workspace/bridge-builder/pyscn/internal/analyzer/cbo_test.go:1616
+        	Error:      	Not equal: 
+        	            	expected: 1
+        	            	actual  : 0
+        	Test:       	TestCBOAnalyzer_QualifiedClassCallArguments/repeated_references_to_the_same_class_count_once
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/non_class_references_are_not_counted
+--- FAIL: TestCBOAnalyzer_QualifiedClassCallArguments (0.01s)
+    --- FAIL: TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_passed_directly_to_isinstance_is_counted (0.00s)
+    --- FAIL: TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_passed_directly_to_ordinary_function_is_counted (0.00s)
+    --- PASS: TestCBOAnalyzer_QualifiedClassCallArguments/same_class_wrapped_in_tuple_is_still_counted (0.00s)
+    --- PASS: TestCBOAnalyzer_QualifiedClassCallArguments/keyword_argument_to_ordinary_function_is_counted (0.00s)
+    --- FAIL: TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_used_as_callee_is_counted_once (0.00s)
+    --- FAIL: TestCBOAnalyzer_QualifiedClassCallArguments/repeated_references_to_the_same_class_count_once (0.00s)
+    --- PASS: TestCBOAnalyzer_QualifiedClassCallArguments/non_class_references_are_not_counted (0.00s)
+FAIL
+FAIL	github.com/ludo-technologies/pyscn/internal/analyzer	0.011s
+FAIL

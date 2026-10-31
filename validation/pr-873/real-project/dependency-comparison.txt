@@ -1,0 +1,62 @@
+baseline-sha.txt: 0615b1a0df793ab5644a8cdc78a8d2a735e5cdaf
+pr-head-sha.txt: ce64e8879dcf643bbd6f779f433261735c6e1b16
+fixture-sha.txt: 5acb8ff1fbe02b4fc6be3e5ea293e59a00ce1761
+
+Classes: 103 -> 103
+Same class set: True
+Same configuration: True
+baseline: 0 errors, 0 failures, 12 warnings
+pr: 0 errors, 0 failures, 12 warnings
+
+Decorator (_decorator.py:176): CBO 4 -> 4
+  Added: []
+  Removed: []
+
+ScrollArea (_scrollarea.py:105): CBO 5 -> 6
+  Added: ['pygame_menu.BaseImage']
+  Removed: []
+
+WidgetManager (_widgetmanager.py:55): CBO 26 -> 29
+  Added: ['pygame_menu.BaseImage', 'pygame_menu.Menu', 'pygame_menu.widgets.Button']
+  Removed: []
+
+BaseImage (baseimage.py:146): CBO 5 -> 6
+  Added: ['pygame.Surface']
+  Removed: []
+
+Selection (selection.py:29): CBO 1 -> 2
+  Added: ['pygame_menu.BaseImage']
+  Removed: []
+
+Widget (widget.py:265): CBO 7 -> 10
+  Added: ['pygame_menu.BaseImage', 'pygame_menu.widgets.DropSelect', 'pygame_menu.widgets.Frame']
+  Removed: []
+
+ButtonManager (button.py:42): CBO 5 -> 6
+  Added: ['pygame.Surface']
+  Removed: []
+
+FPSManager (fps.py:17): CBO 2 -> 3
+  Added: ['pygame.time.Clock']
+  Removed: []
+
+FPS (fps.py:10): CBO 1 -> 2
+  Added: ['pygame.time.Clock']
+  Removed: []
+
+Frame (frame.py:94): CBO 6 -> 7
+  Added: ['pygame_menu.BaseImage']
+  Removed: []
+
+SurfaceWidget (surface.py:26): CBO 2 -> 3
+  Added: ['pygame.Surface']
+  Removed: []
+
+Table (table.py:67): CBO 5 -> 6
+  Added: ['pygame.Surface']
+  Removed: []
+
+Classes with changed metrics: 12
+Classes gaining dependencies: 11
+Classes losing dependencies: 0
+Consistency checks: PASS

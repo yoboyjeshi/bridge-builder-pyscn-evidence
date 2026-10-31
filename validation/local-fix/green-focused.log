@@ -1,0 +1,18 @@
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_passed_directly_to_isinstance_is_counted
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_passed_directly_to_ordinary_function_is_counted
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/same_class_wrapped_in_tuple_is_still_counted
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/keyword_argument_to_ordinary_function_is_counted
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_used_as_callee_is_counted_once
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/repeated_references_to_the_same_class_count_once
+=== RUN   TestCBOAnalyzer_QualifiedClassCallArguments/non_class_references_are_not_counted
+--- PASS: TestCBOAnalyzer_QualifiedClassCallArguments (0.01s)
+    --- PASS: TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_passed_directly_to_isinstance_is_counted (0.00s)
+    --- PASS: TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_passed_directly_to_ordinary_function_is_counted (0.00s)
+    --- PASS: TestCBOAnalyzer_QualifiedClassCallArguments/same_class_wrapped_in_tuple_is_still_counted (0.00s)
+    --- PASS: TestCBOAnalyzer_QualifiedClassCallArguments/keyword_argument_to_ordinary_function_is_counted (0.00s)
+    --- PASS: TestCBOAnalyzer_QualifiedClassCallArguments/qualified_class_used_as_callee_is_counted_once (0.00s)
+    --- PASS: TestCBOAnalyzer_QualifiedClassCallArguments/repeated_references_to_the_same_class_count_once (0.00s)
+    --- PASS: TestCBOAnalyzer_QualifiedClassCallArguments/non_class_references_are_not_counted (0.00s)
+PASS
+ok  	github.com/ludo-technologies/pyscn/internal/analyzer	0.015s
